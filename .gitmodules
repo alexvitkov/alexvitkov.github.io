@@ -1,3 +1,6 @@
 [submodule "particle"]
 	path = particle
 	url = https://github.com/alexvitkov/particle
+[submodule "catmullrom"]
+	path = catmullrom
+	url = https://github.com/alexvitkov/catmullrom
