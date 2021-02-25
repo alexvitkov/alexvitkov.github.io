@@ -3,11 +3,126 @@
     <head>
         <meta charset="utf-8">
         <title>Alex Vitkov</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+        <style>
+html, body {
+    margin: 0;
+}
+body {
+    background: #131415;
+    color: #e1e3e6;
+    font-family: 'Roboto', sans-serif;
+    --accent: #ff5151;
+    font-size: 1.3rem;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.images {
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    background: var(--accent);
+    color: black;
+    margin: 0;
+    padding: 0.3rem;
+    padding-top: 0.8rem;
+    text-align: center;
+}
+h2 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2rem;
+    color: var(--accent); 
+    margin: 0.5rem;
+    text-align: center;
+}
+h2 > a {
+    color: inherit;
+}
+h2 > a:hover {
+    text-decoration: underline;
+    color: #ff8080;
+}
+article {
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid #2b2727;
+    border-radius: 1rem;
+    background: #171819;
+    max-width: 80rem;
+}
+img {
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid #2b2727;
+    max-height: 13rem;
+    height: 13rem;
+    background: black;
+}
+.images > img:first-child {
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.images > img:last-child {
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+p {
+    text-align: justify;
+}
+
+        </style>
     </head>
     <body>
-	<ul>
-		<li><a href="particle/index.html">Particle system</a></li>
-        	<li><a href="catmullrom/spline.html">Catmull-Rom splines</a></li>
-	</ul>
+        <h1>Alex Vitkov</h1>
+
+        <div id="content">
+            <article>
+                <h2><a href="particle/index.html">WebGL Particle System</a></h2>
+
+                <div class="images">
+                    <img src="img/particle1.png">
+                    <img src="img/particle2.png">
+                    <img src="img/particle3.png">
+                    <img src="img/particle4.png">
+                </div>
+
+                <p>
+                This was as a university course project. 
+                The different attributes of the particles (position, color, size, ...) 
+                are controlled by expressions that the user controls, providing pretty nice flexibility.
+                Those expressions can use a predefined set of variables, as well as all functions that the WebGL GLSL implementation supports.
+                </p>
+            </article>
+
+            <article>
+            <h2><a href="catmullrom/spline.html">Catmull-Rom splines</a></h2>
+
+            <div class="images">
+                <img src="img/catmullrom1.png">
+            </div>
+            <p>
+            This is an implementation of the Catmull-Rom interpolation spline. 
+            Nowadays all image editing software that's worth anything comes with a Bezier curve editor of some kind,
+            usually with an interface that lets the artist tweak the individual control points
+            </p>
+            <p>
+            The Catmull-Rom spline is unique amongst the family of Bezier-curve based splines, 
+            in that the control points are calculated automatically - the only input needed are the points that are going to be interpolated.
+            </p>
+
+            </article>
+        </div>
+
     </body>
 </html>
