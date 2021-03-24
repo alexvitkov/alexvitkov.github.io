@@ -1,133 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Alex Vitkov</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+        <title>Sveti Unufri</title>
         <style>
-html, body {
-    margin: 0;
-}
-body {
-    background: #101113;
-    color: #e1e3e6;
-    font-family: 'Roboto', sans-serif;
-    --accent: #ff5151;
-    font-size: 1.3rem;
-}
-#content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.images {
-    display: flex;
-    gap: 0.3rem;
-    justify-content: center;
-}
-h1 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 3rem;
-    background: var(--accent);
-    color: black;
-    margin: 0;
-    padding: 0.3rem;
-    padding-top: 0.8rem;
-    text-align: center;
-}
-h2 {
-    font-family: 'Architects Daughter', cursive;
-    font-size: 2rem;
-    color: var(--accent); 
-    margin: 0.5rem;
-    text-align: center;
-}
-h2 > a {
-    color: inherit;
-}
-h2 > a:hover {
-    text-decoration: underline;
-    color: #ff8080;
-}
-article {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #463f3f;
-    border-radius: 1rem;
-    background: #171819;
-    max-width: 80rem;
-}
-img {
-    min-width: 0;
-    min-height: 0;
-    height: 100%;
-    object-fit: contain;
-    border: 1px solid #2b2727;
-    max-height: 13rem;
-    height: 13rem;
-    background: black;
-}
-.images > img:first-child {
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-}
-.images > img:last-child {
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-}
-p {
-    text-align: justify;
-}
-.quote {
-    text-align: right;
-    font-style: italic;
-    background: #202325;
-    margin: 1rem;
-    padding: 0.4rem;
-}
+            html, body {
+                min-height: 100%;
+            }
 
+            body {
+                height: 100%;
+                margin: 0;
+                background-image: url("flames.gif");
+                text-align: center;
+            }
+            #main {
+                height: 100%;
+                background-image: url("pattern1.jpg");
+                display: inline-block;
+                width: 900px;
+                border-left: 12px dotted black;
+                border-right: 12px dotted black;
+                text-align: center;
+            }
+            #head {
+                background-image: url("pattern2.jpg");
+                border-bottom: 12px dotted black;
+            }
+            table, td, tr {
+                border: 1px solid red;
+            }
+            td {
+                margin: 20px;
+                padding: 5px 10px;
+                background-color: white;
+            }
+            table {
+                display: inline-block;
+                background-color:yellow;
+            }
         </style>
     </head>
     <body>
-        <div id="content">
-            <article>
-                <h2><a href="particle/index.html?preset=presets/%D0%BE%D0%B3%D1%8A%D0%BD.json">WebGL Particle System</a></h2>
+        <div id="main">
+        <div id="head"><img src="onufri.JPG" width="200"></div>
+        <h1>Свети Онуфри</h1>
+        <p>
+            Аз съ Онуфри (светец).
+        </p>
+        <p>
+            Поклонете се пред този кръст преди да продължите напред.
+        </p>
+        <img src="cross.jpg" height="400"><br>
 
-                <div class="images">
-                    <img src="img/particle1.png">
-                    <img src="img/particle2.png">
-                    <img src="img/particle3.png">
-                    <img src="img/particle4.png">
-                </div>
-
-                <div class="quote">
-                    I could feel the heat of the individual fire particles coming through the screen.
-                    <div>-- someone, probably</div>
-                </div>
-
-                <p>I wrote this particle system an university project, but it's soon bound to be used by movie studios all around the globe.</p>
-                <p>It is about 30% better than Unreal Engine's particle system or about ∞% better than Unity's. Driven by complex mathematical equations, it allows for <b>UNPARALLELED CONTROL</b> over the look, feel, taste and smell of every individual particle.</p>
-
-                
-                <p style="font-size: 0.6em;">
-                Starting at $1000 per user per 5 particle systems per month for the base version, with 30% discount for bulk purchases (more than 500 copies)
-                </p>
-            </article>
-
-            <article>
-            <h2><a href="catmullrom/spline.html">Catmull-Rom splines</a></h2>
-
-            <div class="images">
-                <img src="img/catmullrom1.png">
-            </div>
-            <p>
-            it's just a spline, nothing special about it, except that it comes with a one year free trial of our industry-leading ground-breaking mind-shattering particle system.
-            </p>
-
-            </article>
-        </div>
-
+        <h1>Свети Онуфри</h1>
+        <table>
+            <tr>
+                <td>Професия</td>
+                <td>Светец</td>
+            </tr>
+            <tr>
+                <td>Работно място</td>
+                <td>Римо-католическата църква</td>
+            </tr>
+            <tr>
+                <td>Любима храна</td>
+                <td>нещо постно, прасенце със гъбки</td>
+            </tr>
+            <tr>
+                <td>Любим светец</td>
+                <td>Мохамед</td>
+            </tr>
+        </table>
+</div>
     </body>
 </html>
